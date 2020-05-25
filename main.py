@@ -81,7 +81,6 @@ def print_board(bo):
 
 
 
-
 def find_empty(bo):
     for i in range(len(bo)):
         for j in range(len(bo[0])):
