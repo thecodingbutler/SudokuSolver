@@ -1,9 +1,6 @@
 # TODO: 
-## Import libarys
 ## get board
 ## apply backtracking Algorithm
-
-import numpy
 
 # Sudoku puzzle to solve. 0 respresents empty field
 puzzle = [
