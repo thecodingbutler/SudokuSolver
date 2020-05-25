@@ -4,6 +4,8 @@
 ## apply backtracking Algorithm
 
 import numpy
+
+# Sudoku puzzle to solve. 0 respresents empty field
 puzzle = [
     [7,0,6,2,4,0,9,0,0],
     [8,0,0,0,9,0,0,0,0],
@@ -15,19 +17,6 @@ puzzle = [
     [0,6,0,0,7,0,0,0,0],
     [0,0,0,0,0,5,4,0,0]
 ]
-
-board = [
-    [7,8,0,4,0,0,1,2,0],
-    [6,0,0,0,7,5,0,0,9],
-    [0,0,0,6,0,1,0,7,8],
-    [0,0,7,0,4,0,2,6,0],
-    [0,0,1,0,5,0,9,3,0],
-    [9,0,4,0,6,0,0,0,5],
-    [0,7,0,3,0,0,0,1,2],
-    [1,2,0,0,0,7,4,0,0],
-    [0,4,9,2,0,6,0,0,7]
-]
-
 
 
 
@@ -77,6 +66,7 @@ def valid(bo, num, pos):
     return True
 
 
+# prettier print function for the board / 2D Array
 def print_board(bo):
 
     for i in range(len(bo)):
@@ -103,10 +93,13 @@ def find_empty(bo):
     return None
     
 
-
+# Print initial board
 print_board(puzzle)
+
 solve(puzzle)
 print()
 print(" - - - - - - - - - - - ")
 print()
+
+# Print solved board
 print_board(puzzle)
